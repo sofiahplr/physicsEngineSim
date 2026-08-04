@@ -1,13 +1,18 @@
 :root {
-    --background-color: #1a192c;
-    --panel-color: #474569;
-    --border-color:
-    --text-color:
+    --background-color: #0c0c14;
+    --panel-color: #1b1b31;
+    --border-color: #444258;
+    --title-color: #e7e7e7;
+    --subtitle-color: #9391aa;
+    --text-color: #dbd8e2;
+    --button-color: #3c3a55;
 }
 
 body {
+    margin: 0;
+
     background-color: var(--background-color);
-    margin:0;
+    font-family: "Inter";
 }
 
 #simCanvas {
@@ -23,9 +28,51 @@ body {
 .app-header {
     display:flex;
     align-items:center;
+    gap: 40px;
+
+    
     background-color:var(--panel-color);
+
+    border-bottom: 1px solid var(--border-color);
+}
+
+.app-title {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+
+    /* padding: up&down sides */
+    padding: 16px 26px;
+    border-right: 1px solid var(--border-color);
+}
+
+.app-title h1 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--title-color);
+}
+
+.app-title p {
+    margin: 3px 0 0;
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--subtitle-color);
 }
 
 .simulation-controls {
+    display: flex;
+    gap: 10px;
+}
 
+.simulation-controls button {
+    padding: 10px;
+
+    background-color: var(--button-color);
+    color: var(--text-color);
+    
+    border: none;
+    border-radius: 4px;
+
+    font-size: 14px;
 }
