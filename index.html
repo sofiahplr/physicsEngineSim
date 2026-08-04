@@ -4,14 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Physics 2D Simulator</title>
+    <title>Physics Playground</title>
     <link rel="stylesheet" href="./src/styles.css">
 </head>
 
 <body>
+    <header class="app-header">
+        <h1 class="app-title">Physics Playground</h1>
+
+        <div class="simulation-controls">
+            <button type="button">Play</button>
+            <button type="button">Reset</button>
+        </div>
+    </header>
+
+
+    <input id="colorPicker" type="color">
+
     <canvas id="simCanvas" width="800" height="500">
         Your browser does not support the HTML canvas element.
     </canvas>
+
+    
     
     <script type="module" src="./src/main.js"></script>
 </body>
